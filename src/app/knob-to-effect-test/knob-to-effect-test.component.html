@@ -1,0 +1,59 @@
+<app-my-knob
+  title="Frequency"
+  [min]="0"
+  [max]="600"
+  [value]="frequency?.value"
+  [startDegree]="200"
+  [endDegree]="160"
+  (valueChange)="onFrequencyChanged($event)"
+>
+</app-my-knob>
+
+<app-my-knob
+  title="Detune"
+  [min]="-100"
+  [max]="100"
+  [value]="detune?.value"
+  [startDegree]="270"
+  [endDegree]="90"
+  (valueChange)="onDetuneChanged($event)"
+>
+</app-my-knob>
+
+<app-my-knob
+  title="Gain"
+  [min]="0"
+  [max]="1000"
+  [value]="gain?.value"
+  [startDegree]="200"
+  [endDegree]="160"
+  (valueChange)="onGainChanged($event)"
+>
+</app-my-knob>
+
+<app-my-knob
+  title="Pan"
+  [min]="-1000"
+  [max]="1000"
+  [value]="panner?.value"
+  [startDegree]="200"
+  [endDegree]="160"
+  (valueChange)="onPannerChanged($event)"
+>
+</app-my-knob>
+
+<div class="container">
+  <h1>Wave</h1>
+  <mat-radio-group
+    class="wave-form-radio-group"
+    (change)="onWaveFormChanged($event)"
+  >
+    <mat-radio-button
+      class="wave-form-radio-button"
+      *ngFor="let waveForm of waveForms"
+      [value]="waveForm"
+    >
+      {{ waveForm }}
+    </mat-radio-button>
+  </mat-radio-group>
+</div>

@@ -1,0 +1,12 @@
+knob.skin3{
+    background:url('/assets/skins/skin3_back.svg');
+    background-size: contain;    
+    width:100px;
+    height:100px;
+}
+knob.skin3 /deep/ .knob{
+    background:url('/assets/skins/skin3_front.svg');
+    background-size: contain;    
+    width:100px;
+    height:100px;
+}

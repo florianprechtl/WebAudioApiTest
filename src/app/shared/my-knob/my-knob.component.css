@@ -1,0 +1,57 @@
+.knob-input {
+  width: 30%;
+  margin: 0 35%;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+/* Knob Stuff beginn */
+
+.container {
+  width: 144px;
+  overflow: hidden;
+  border: 7px solid #fafafa;
+  padding: 0 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  background: #272727;
+  float: left;
+  margin: 40px;
+}
+
+.container.degree {
+  background: #f0f0f0;
+  width: 350px;
+}
+
+.info.degree {
+  color: #888888;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 7px;
+  font-size: 20px;
+}
+knob {
+  background-size: contain;
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+knob.skin3 {
+  background: url("/assets/skins/skin3_back.svg");
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+knob.skin3 /deep/ .knob {
+  background: url("/assets/skins/skin3_front.svg");
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+/* Knob Stuff end */

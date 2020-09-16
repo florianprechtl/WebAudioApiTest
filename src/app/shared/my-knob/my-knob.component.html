@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 *ngIf="title" class="title">{{ title }}</h1>
+  <knob
+    class="skin3"
+    #knob
+    [min]="min"
+    [max]="max"
+    [(ngModel)]="value"
+    [startDegree]="startDegree"
+    [endDegree]="endDegree"
+  ></knob>
+  <mat-form-field class="knob-input">
+    <input matInput [(ngModel)]="value" />
+  </mat-form-field>
+</div>

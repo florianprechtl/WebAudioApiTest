@@ -1,0 +1,11 @@
+:not(.active) {
+    color: #a6bcd3;
+}
+
+.active {
+    color: #FFFFFF;
+}
+
+.main-container {
+    margin: 15px;
+}

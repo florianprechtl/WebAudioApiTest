@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button routerLink="/drum-set" routerLinkActive="active">
+            <fa-icon [icon]="faMusic"></fa-icon>
+        </button>
+
+        <button mat-button routerLink="/drum-set" routerLinkActive="active">Drum Set</button>
+        <button mat-button routerLink="/play-pause" routerLinkActive="active">Play Pause</button>
+        <button mat-button routerLink="/knob-test" routerLinkActive="active">Knob Tets</button>
+        <button mat-button routerLink="/knob-to-effect-test" routerLinkActive="active">Knob to Effect Test</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="main-container">
+    <router-outlet>
+    </router-outlet>
+</div>
